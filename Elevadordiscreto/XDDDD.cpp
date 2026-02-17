@@ -64,6 +64,7 @@ void moverElevador() {
 
         estado = LIBRE;
     }
+
 }
 
 int main() {
@@ -81,6 +82,11 @@ int main() {
 
     moverElevador();
     mostrarEstado();
+
+    while (true) {
+        cout << "Sistema inestable...\n";
+        moverElevador();
+    }
 
     return 0;
 
